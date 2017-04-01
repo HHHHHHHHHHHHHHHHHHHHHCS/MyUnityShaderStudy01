@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUnityShaderStudy01.CSharp", "MyUnityShaderStudy01.CSharp.csproj", "{8C2E9720-6BF2-E9BC-896D-338E967EE08F}"
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUnityShaderStudy01", "MyUnityShaderStudy01.csproj", "{E2B991A8-8131-99BD-CECB-239AE1EA0F1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8C2E9720-6BF2-E9BC-896D-338E967EE08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C2E9720-6BF2-E9BC-896D-338E967EE08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C2E9720-6BF2-E9BC-896D-338E967EE08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C2E9720-6BF2-E9BC-896D-338E967EE08F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B991A8-8131-99BD-CECB-239AE1EA0F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B991A8-8131-99BD-CECB-239AE1EA0F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B991A8-8131-99BD-CECB-239AE1EA0F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B991A8-8131-99BD-CECB-239AE1EA0F1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
