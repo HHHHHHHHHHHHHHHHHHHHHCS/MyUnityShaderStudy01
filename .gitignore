@@ -33,3 +33,8 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Build.zip
+
+#Update Command
+#git rm -r --cached .
+#git add .
+#git commit -m 'update .gitignore'
