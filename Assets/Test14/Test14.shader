@@ -1,4 +1,6 @@
-﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
 
 
@@ -58,7 +60,7 @@ Shader "Study/Test14"
 		{
 			v2f o;
 
-			o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			o.pos = UnityObjectToClipPos(v.vertex);
 
 			o.uv.xy = v.texcoord.xy*_MainTex_ST.xy + _MainTex_ST.zw;
 			o.uv.zw = v.texcoord.xy*_BumpMap_ST.xy + _BumpMap_ST.zw;

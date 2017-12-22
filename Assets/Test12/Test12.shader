@@ -1,4 +1,6 @@
-﻿
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+
 
 Shader "Study/Test12"
 {
@@ -43,7 +45,7 @@ Shader "Study/Test12"
 		{
 			v2f o;
 
-			o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			o.pos = UnityObjectToClipPos(v.vertex);
 
 			o.worldNormal = UnityObjectToWorldNormal(v.normal);
 

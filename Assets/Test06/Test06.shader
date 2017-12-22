@@ -1,4 +1,6 @@
-﻿Shader "Study/Test06"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Study/Test06"
 {
 
 	SubShader
@@ -26,7 +28,7 @@
 			v2f vert(a2v v) 
 			{
 				v2f o;
-				o.pos = mul(UNITY_MATRIX_MVP,v.pos);
+				o.pos = UnityObjectToClipPos(v.pos);
 				if (o.pos.x > 0)
 				{
 					o.col = o.pos;

@@ -1,4 +1,6 @@
-﻿
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+
 
 Shader "Study/Test10"
 {
@@ -41,7 +43,7 @@ Shader "Study/Test10"
 		{
 			v2f o;
 
-			o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			o.pos = UnityObjectToClipPos(v.vertex);
 
 			fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
 
