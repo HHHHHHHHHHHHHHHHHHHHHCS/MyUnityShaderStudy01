@@ -5,6 +5,7 @@
 		_MainTex ("Texture", 2D) = "white" {}
 		_Columns("Columns float",float) = 64
 		_Rows("Rows float",float) = 64
+		_Offest("Offest",Range(0,2)) = 1.01
 	}
 	SubShader
 	{
@@ -18,6 +19,12 @@
 			#pragma fragment frag
 			
 			#include "UnityCG.cginc"
+
+
+			float _Columns;
+			float _Rows;
+			sampler2D _MainTex;
+			float _Offest;
 
 			struct appdata
 			{
@@ -39,9 +46,7 @@
 				return o;
 			}
 			
-			float _Columns;
-			float _Rows;
-			sampler2D _MainTex;
+
 
 			fixed4 frag (v2f i) : SV_Target
 			{
@@ -53,8 +58,9 @@
 				uv.x /= _Columns;
 				uv.y /= _Rows;
 				fixed4 col = tex2D(_MainTex, uv);
-				// just invert the colors
-				//col = 1 - col;
+				uv.x *= ((_SinTime.z +1)/10+0.9);
+				fixed4 col2 = tex2D(_MainTex, uv);
+				col =  (col+col2)/2;
 				return col;
 			}
 			ENDCG
