@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class CameraBulr : MonoBehaviour
+public class Test19_Blur : MonoBehaviour
 {
     public Material mat;
 

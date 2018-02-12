@@ -1,5 +1,5 @@
 ﻿Shader "Hidden/S_Test19"
-{
+{//这个是BOX Blur
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
@@ -57,6 +57,7 @@
 				uv.y = round(uv.y);
 				uv.x /= _Columns;
 				uv.y /= _Rows;
+				//这里是做模糊偏移
 				fixed4 col = tex2D(_MainTex, uv);
 				uv.x *= ((_SinTime.z +1)/10+0.9);
 				fixed4 col2 = tex2D(_MainTex, uv);
