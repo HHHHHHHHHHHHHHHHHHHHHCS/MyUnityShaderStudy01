@@ -1,4 +1,4 @@
-﻿Shader "Custom/Transparent Specular"
+﻿Shader "Custom/S_Test32"
 {
 	Properties
 	{
