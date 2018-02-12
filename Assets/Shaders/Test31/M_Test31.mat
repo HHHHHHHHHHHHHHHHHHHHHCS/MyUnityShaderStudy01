@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: M_Test30
-  m_Shader: {fileID: 4800000, guid: b6f832a6b8b4ca24fa78b82455d5b30b, type: 3}
+  m_Name: M_Test31
+  m_Shader: {fileID: 4800000, guid: c73917d1ab179f74c9f8e86f957f3b84, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -91,4 +91,5 @@ Material:
     - _ColorEnd: {r: 0, g: 1, b: 1, a: 1}
     - _ColorStart: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OccludeColor: {r: 0, g: 0, b: 1, a: 1}
     - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
